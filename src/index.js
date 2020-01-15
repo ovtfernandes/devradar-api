@@ -1,6 +1,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const config = require('../config.json');
+const routes = require('./routes');
 
 const app = express();
 
@@ -11,5 +12,6 @@ mongoose.connect(`mongodb+srv://${dbUsername}:${dbPassword}@${dbClusterUrl}/${db
 });
 
 app.use(express.json());
+app.use(routes);
 
 app.listen(3333);
