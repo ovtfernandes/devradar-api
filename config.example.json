@@ -1,0 +1,8 @@
+{
+    "database": {
+        "dbName": "",
+        "dbUsername": "",
+        "dbPassword": "",
+        "dbClusterUrl": ""
+    }
+}
