@@ -16,12 +16,18 @@ module.exports = {
             
             const techsArray = parseStringAsArray(techs);
 
+            const location = {
+                type: 'Point',
+                coordinates: [longitude, latitude],
+            };
+
             dev = await Dev.create({
                 github_username,
                 name,
                 avatar_url,
                 bio,
                 techs: techsArray,
+                location,
             });
         }
 
