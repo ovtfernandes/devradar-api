@@ -1,7 +1,7 @@
 const { Router } = require('express');
 
 const devController = require('./controllers/devController');
-const searchController = require('./controllers/searchController');
+const searchController = require('./controllers/searchcontroller');
 
 const routes = Router();
 
